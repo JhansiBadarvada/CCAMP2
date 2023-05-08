@@ -13,7 +13,7 @@ def query_ip():
 
 @app.route('/', methods=['POST'])
 def launch_ec2():
-    return subprocess.Popen("C:/JhansiProjects/UIUC/CCA/Week2_v2/stress_cpu.py")
+    return subprocess.Popen("/home/ec2-user/CCAMP2/stress_cpu.py")
 
 if (__name__ == "__main__"):
     app.run(debug=True, host="0.0.0.0", port=8080)
